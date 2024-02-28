@@ -54,8 +54,8 @@ def process_configuration():
 
     if os.path.exists("receipts"):
         shutil.rmtree("receipts", ignore_errors=True)
-    if os.path.exists("receipts"):
-        shutil.rmtree("receipts", ignore_errors=True)
+    if os.path.exists("output/receipts.zip"):
+        os.remove("output/receipts.zip")
 
     browser.configure(
         slowmo=0,
